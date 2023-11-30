@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static './css/index.css' %}">
+
+<section class="banner-container">
+    <div class="container">
+        <div class="row">
+            <div class="banner-text col-6 p-5">
+                <h1>Enjoy Your Favourite Food</h1>
+                <p>Elevate your celebrations with us. Whether it's an intimate dinner for two, a family gathering, or a special event, Food Land provides the perfect setting for every occasion.</p>
+            </div>
+            <div class="col-6 p-5 d-flex justify-content-center">
+                <img class="w-100 banner-img" src="{% static 'images/banner_right.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container my-3">
+    <div class="gradient-overlay-container">
+        <img src="{% static './images/banner_img.jpg' %}" alt="Your Image Description">
+        <div class="text-overlay">All Your Favourite Food is Here</div>
+    </div>
+</div>
+    
+{% endblock content %}

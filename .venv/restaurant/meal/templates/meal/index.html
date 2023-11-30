@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+<div class="my-5 row row-gap-5 justify-content-center m-auto" style="max-width: 1225px;">
+    {% for category in categories %}
+    <div class="col-4">
+        <div class="card rounded-0 m-auto" style="width: 18rem;">
+            <img src="{{ category.strCategoryThumb }}" class="card-img-top rounded-0" alt="...">
+            <div class="card-body">
+            <h3>{{ category.idCategory }}</h3>
+            <h5 class="card-title mb-3">{{ category.strCategory }}</h5>
+            <p class="card-text">{{category.strCategoryDescription | truncatewords:10}}</p>
+            <a href="?{{category.idCategory}}" class="btn btn-success w-100">See Details</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
