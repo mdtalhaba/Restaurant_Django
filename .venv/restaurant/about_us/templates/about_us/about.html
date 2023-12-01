@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "css/about.css" %}">
+    
+<section class="about-container">
+    <div class="container">
+        <div class="about-header">
+            <h1>About Food Land</h1>
+            <p class="fw-medium text-secondary">Welcome to Food Land, where passion for food meets the convenience of online dining. We're not just a platform, we're your go-to destination for culinary exploration, delivering a feast of flavors right to your doorstep.</p>
+        </div>
+        <div class="row">
+            <div class="col-6 p-5">
+                <div class="mb-4">
+                    <h4>Our Journey:</h4>
+                    <p class="text-secondary">At Food Land, our journey began with a simple yet profound idea—to connect food lovers with the finest eateries in town. We embarked on a mission to redefine the way people experience food, making it not just a necessity but a delightful indulgence.</p>
+                </div>
+                <div class="mb-4">
+                    <h4>Culinary Diversity:</h4>
+                    <p class="text-secondary">Explore a world of culinary diversity curated just for you. Our platform showcases a diverse range of cuisines, from local favorites to exotic international dishes. Each dish is a celebration of flavors crafted by passionate chefs who pour their expertise and love into every creation.</p>
+                </div>
+                <div class="mb-4">
+                    <h4>Seamless Ordering:</h4>
+                    <p class="text-secondary">We believe in making life easier. Our user-friendly interface ensures a seamless ordering experience. With just a few clicks, you can explore menus, customize your order, and have your favorite dishes delivered to your doorstep.</p>
+                </div>
+                <div class="mb-4">
+                    <h4>Quality Assurance:</h4>
+                    <p class="text-secondary">Quality is our priority. We partner with top-rated restaurants and food vendors known for their commitment to excellence. Each dish is prepared with the finest ingredients, ensuring that every bite is a moment of culinary bliss.</p>
+                </div>
+                <div class="mb-4">
+                    <h4>Reliable Delivery:</h4>
+                    <p class="text-secondary">We understand the importance of timely delivery. Our dedicated delivery network ensures that your orders arrive fresh and hot, just the way you love them. Track your delivery in real-time and anticipate the joy of your meal's arrival.</p>
+                </div>
+            </div>
+            <div class="col-6 p-5">
+                <img class="about-img" src="{% static "images/about_img.jpg" %}" alt="Food Prepairing Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
